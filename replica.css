@@ -15,7 +15,7 @@ body,html
 	width:100%;
 	margin:0 auto;
 	padding-top:0 200px;
-	height:70px;
+	height:10%;
 	position:relative;
 }
 .navbar>ul
@@ -37,7 +37,9 @@ body,html
 	text-decoration:none;
 	color:#7b8b8e;
 	margin-right:50px;
-	font-size:14px;
+	font-size:16px;
+	font-weight:700;
+	transition:color .5s ease;
 }
 .navbar a:hover
 {
@@ -45,42 +47,44 @@ body,html
 }
 .container
 {
-	height:88%;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
-	padding-bottom: 2rem;
-        background-image:linear-gradient(to bottom, rgba(48,56,83,0) 40%, #303853 60%, #303853 100%),url(https://static.teamtreehouse.com/assets/views/marketing/home/homepage-hero-86e988fc10618a6d2b743327d67eeca3b0396f9720d94c35bbff8cd217de96d1.jpg);
+	height:90vh;
+	width:100%;
+	margin:0 auto;
+    background-image:linear-gradient(to bottom, rgba(48,56,83,0) 40%, #303853 60%, #303853 100%),url(https://static.teamtreehouse.com/assets/views/marketing/home/homepage-hero-86e988fc10618a6d2b743327d67eeca3b0396f9720d94c35bbff8cd217de96d1.jpg);
 	background-position-x: 100%, 100%;
-        background-position-y: 0px, -200px;
-        background-size: 100%, 100%;
+    background-position-y: 0px, -200px;
+    background-size:cover;
 	background-attachment:fixed,fixed;
 	background-color:#303853;
 	position:relative;
+	background-repeat:no-repeat;
 }
 .info1
 {
 	position:absolute;
 	top:200px;
-	left:200px;
+	left:10%;
+	width:40%;
 	color:white;
-	font-size:2.25rem;
+	font-size:35px;
 	font-weight:700;
 }
 .info2
 {
 	position:absolute;
-	top:300px;
-	left:200px;
+	top:325px;
+	left:10%;
+	width:40%;
 	color:white;
-	font-size:1.75rem;
+	font-size:30px;
 }
 .form
 {
 	position:absolute;
-	width:600px;
-	height:450px;
+	width:40%;
+	height:auto;
 	top:80px;
-	right:180px;
+	right:10%;
 	background-color:white;
 	border-radius:5px;
 }
@@ -100,7 +104,7 @@ form
 }
 label
 {
-	width:275px;
+	width:48%;
 	display:inline-block;
 	color:#40484a;
 	text-align:left;
@@ -109,7 +113,7 @@ label
 }
 input
 {
-	width:275px;
+	width:48%;
 	background-color: #f9fafa;
 	border:2px solid #d4d9dd;
 	border-radius:4px;
@@ -117,6 +121,7 @@ input
 	padding:.75rem 1rem;
 	margin-top:.5rem;
 	margin-bottom:20px;
+	transition:border-color .5s ease;
 }
 input:hover
 {
@@ -190,6 +195,7 @@ button
 	color:white;
 	font-weight:700;
 	text-align:center;
+	transition:background-color .5s ease,border .5s ease;
 }
 button:hover
 {
@@ -212,8 +218,12 @@ button div
 .bottom
 {
 	position:absolute;
-	bottom:50px;
-	padding:0 20rem;
+	width:100%;
+	bottom:4%;
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    padding:0 15px;
 	color:white;
 }
 .bottom div
@@ -233,37 +243,38 @@ button div
 .content
 {
 	position:relative;
-        padding:2rem 6rem;
-    	height:80%;
-    	background:#303853 url(https://static.teamtreehouse.com/assets/views/marketing/home/homepage-texture-34e7c496750ff276b021f3b2b83238c3177c2c30564885d11d181c4e795a844b.png) top/contain no-repeat;
-    	background-color:#f9fafa;
+    padding:2rem 6rem;
+    height:160vh;
+    background:#303853 url(https://static.teamtreehouse.com/assets/views/marketing/home/homepage-texture-34e7c496750ff276b021f3b2b83238c3177c2c30564885d11d181c4e795a844b.png) top/contain no-repeat;
+    background-color:#f9fafa;
 }
 .flexible
 {
 	border-bottom:1px solid #d4d9dd;
 	width:100%;
-	height:100%;
+	height:70vh;
 	margin:0 auto;
 }
 video
 {
 	float:left;
+	width:60%;
 }
 .flexible div
 {
 	position:absolute;
 	top:50px;
-	left:850px;
-	width:450px;
+	left:60%;
+	width:40%;
 	color:#7b8b8e;
 	font-size:1rem;
-	line-height:1.3;
+	line-height:1.8;
 }
 .flexible svg
 {
 	position:absolute;
 	top:308px;
-	left:750px;
+	left:55%;
 }
 .info div
 {
@@ -278,11 +289,12 @@ video
 .info svg,.info img
 {
 	padding-top:50px;
+	width:389px;
 }
 .partners
 {
 	clear:left;
-	margin-bottom:15rem;
+	margin-bottom:10rem;
 	text-align:center;
 	font-size:2.25rem;
 	color:#384047;
@@ -291,8 +303,11 @@ video
 }
 .four
 {
-	width:80%;
-	margin:0 auto;
+	width:100%;
+	display:flex;
+	justify-content: center;
+	flex-wrap:wrap;
+	padding:0 20px;
 }
 .four div
 {
@@ -304,15 +319,15 @@ video
 .learnmore
 {
 	background:url(https://static.teamtreehouse.com/assets/views/marketing/home/100-days-of-code-bg-6a72c1d4f2463649cb391a19550e64547823af2849917fa640d3e515900175d3.jpg) center/cover no-repeat;
-    	padding-top:5rem;
-    	padding-bottom:5rem;
-    	text-align:center;
-    	color:white;
+    padding-top:5rem;
+    padding-bottom:5rem;
+    text-align:center;
+    color:white;
 }
 .learnmore h3
 {
 	font-size:2.25rem;
-    	margin:15px 0;
+    margin:15px 0;
 }
 .learnmore
 {
@@ -336,6 +351,7 @@ video
 	height:52px;
 	line-height:48px;
 	padding:0 32px;
+	transition:background-color .5s ease,border-color .5s ease;
 }
 .learnmore a:hover
 {
@@ -344,10 +360,10 @@ video
 }
 .footer
 {
-	padding:5rem 8rem;
+	padding:5rem;
 	width:100%;
 	margin:0 auto;
-	margin-bottom:5rem;
+	margin-bottom:10%;
 }
 .col
 {
@@ -360,13 +376,21 @@ video
 	width:140px;
 	height:30px;
 }
-.a,.d
+.a
 {
 	width:30%;
 }
-.b,.c
+.b
 {
 	width:20%;
+}
+.c
+{
+	width:25%;
+}
+.d
+{
+	width:25%;
 }
 .b ul,.c ul,.d ul
 {
@@ -383,6 +407,10 @@ video
 	color:#7b8b8e;
 	text-decoration:none;
 }
+.d ul
+{
+	float:left;
+}
 .d li
 {
 	margin-right:4px;
@@ -396,8 +424,148 @@ video
 	height:26px;
 	border-radius:26px;
 	display:inline-block;
+	transition:background-color.5s ease;
 }
 .d a:visited,.d a:hover
 {
 	background-color:#5fcf80;
+}
+@media screen and (max-width:960px)
+{
+	.container
+	{
+		padding:0 15px;
+		height:120vh;
+	}
+    .info1
+	{
+		top:5%;
+		left:5%;
+		width:100%;
+	}	
+	.info2
+	{
+		top:20%;
+		left:5%;
+		width:100%;
+	}
+	.form
+	{
+		width:80%;
+		top:30%;
+	}
+	video
+	{
+		float:left;
+		width:100%;
+	}
+	.flexible div
+	{
+		position:absolute;
+	    top:500px;
+	    left:10%;
+	    width:90%;
+	    padding-bottom:10px;
+	    border-bottom:1px solid #d4d9dd;
+	}
+	.flexible svg
+	{
+		display:none;
+	}
+	.info
+	{
+		position:relative;
+		top:15%;
+	}
+	.info div
+	{
+		float:left;
+		width:100%;
+		margin:0 auto;
+		padding:20px;
+	}
+	.info img, .info svg
+	{
+		padding-top:15px;
+		width:60vw;
+	}
+	.partners
+	{
+		position:relative;
+		top:20%;
+	}
+	.a,.b,.c,.d
+	{
+		width:100%;
+	}
+	.d ul
+	{
+		float:left;
+	}
+}
+@media screen and (max-width:680px)
+{
+	.navbar
+	{
+		height:20%;
+	}
+	.container
+	{
+		padding:0 15px;
+		height:160vh;
+	}
+	.info1
+	{
+		top:5%;
+		left:2%;
+		width:100%;
+	}
+	.info2
+	{
+		top:22%;
+		left:2%;
+		width:100%;
+	}
+	.form
+	{
+		width:80%;
+		top:32%;
+	}
+	.triangle-right
+	{
+		display:none;
+	}
+	video
+	{
+		float:left;
+		width:100%;
+	}
+	.info
+	{
+		position:relative;
+		top:21%;
+	}
+	.footer
+	{
+		margin:0;
+		padding:50px;
+	}
+	.valuable p
+	{
+		margin-bottom:0;
+	}
+	.info img, .info svg
+	{
+		padding-top:0;
+	}
+	.partners
+	{
+		position:relative;
+		top:23%;
+	}
+	.learnmore
+	{
+		position:relative;
+		top:10%;
+	}
 }
